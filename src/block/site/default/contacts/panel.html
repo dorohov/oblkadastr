@@ -1,0 +1,105 @@
+<div class="container {{contacts_prefix}}container content-block__container  is--nofooter">	
+	<div class="{{contacts_prefix}}block">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--contacts"
+			header_level="h1"
+			header="Контакты"
+		]]	
+		<div class="{{contacts_prefix}}row row  is--wrap  is--gutter">
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
+				<div class="{{contacts_prefix}}item">
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-nolink.html" 
+						social_prefix="social__"
+						social_mode="is--contacts  is--location"
+						social_icon="location"
+						social_name="Офисы в Орле:"
+					]]
+				</div>
+				<div class="{{contacts_prefix}}item">
+					г. Орёл, ул. Гуртьева, д. 14
+				</div>
+				<div class="{{contacts_prefix}}item">
+					г. Орёл, ул. Космонавтов, д. 3 (По предварительной записи)
+				</div>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-5">	
+				<div class="{{contacts_prefix}}item">
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-nolink.html" 
+						social_prefix="social__"
+						social_mode="is--contacts  is--location"
+						social_icon="location"
+						social_name="Офисы регионов:"
+					]]
+				</div>
+				<div class="{{contacts_prefix}}item">
+					г.&nbsp;Мценск, ул.&nbsp;Ленина, д.&nbsp;34
+				</div>
+				<div class="{{contacts_prefix}}item">
+					г.&nbsp;Ливны, ул.&nbsp;Ленина, д.&nbsp;20
+				</div>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
+				
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+						social_href="tel:+74862492929"
+						social_target="  "
+						social_mode="is--contacts"
+						social_icon="tel"
+						social_name="+7 (4862) <span>49-29-29</span>"
+					]]
+				</div>
+				
+				<div class="{{contacts_prefix}}item">
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal-icon.html"
+						button_prefix="btn-link__" 
+						button_mod="is--footer"
+						button_target="modal-call"
+						button_name="Заказать звонок"
+					]]
+				</div>
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+						social_href="mailto:info@oblkadastr.ru"
+						social_target="  "
+						social_mode="is--contacts  is--email"
+						social_icon="email"
+						social_name="<span>info</span>@oblkadastr.ru"
+					]]
+				</div>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-5">	
+				[[azbntple 
+					tpl="/src/block/site/default/social/item-target.html" social_prefix="social__"
+					social_href="https://vk.com/"
+					social_target="_blank"
+					social_mode="is--vk"
+					social_icon="vk"
+					social_name="  "
+				]]
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
+				<p><b>Вы можете также связаться с нами, отправив сообщение через форму</b></p>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-5">
+				[[azbntple 
+					tpl="/src/block/site/default/button/button-modal.html"
+					button_prefix="btn__" 
+					button_mod="is--sm"
+					button_target="modal-review"
+					button_name="Связаться"
+				]]
+			</div>	
+		</div>
+	</div>
+</div>
+<div class="{{contacts_prefix}}map">
+	<div class="{{contacts_prefix}}map-item" id="map-google"></div>
+</div>

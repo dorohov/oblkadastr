@@ -1,0 +1,109 @@
+.index-page-header{
+	position: relative;
+	overflow: hidden;	
+	//background-color: @white10;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	background-color: @blue-white;
+}
+.index-header__{
+	&container{
+		position: relative;
+		z-index: 1;
+		@media @media-size-xs {
+			z-index: 3;
+			position: relative;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			min-height: 250px;
+		}
+		@media @media-size-xs-l {min-height: 350px;}
+		@media @media-size-sm {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		@media @media-size-sm-p {
+			min-height: 50vw;
+		}
+		@media @media-size-sm-l {
+			min-height: 42vw;
+		}
+		@media @media-screen{		
+			min-height: ~"calc(100vh - @{navbar-top-screen})";
+			padding-top: @navbar-top-screen;
+		}
+		@media @media-size-md{
+			padding-top: @navbar-top-md;	
+			min-height: ~"calc(100vh - @{navbar-top-md})";	
+		}
+		@media @media-size-lg{
+			padding-top: @navbar-top-lg;	
+			min-height: ~"calc(100vh - @{navbar-top-lg})";	
+		}
+		@media @media-size-xxl{	
+			padding-top: @navbar-top-screen-xxl;
+		}
+	}
+	&inner{
+		@media @media-size-xs-p {
+		    max-width: 180px;
+		}
+		@media @media-screen {
+			position: absolute;
+			top: 44%;
+			transform: translate(0%,-50%);
+			width: 100%;
+			left: 15px;
+			transition: @trs-site;
+		}
+	}
+	&heading{
+		font-family: @b-ff-2;
+		margin: 0;
+		letter-spacing: 0.5px;
+		.calcFontSize(24, 120, 320, 1680);
+		.calcLineHeight(30, 100, 320, 1680);	
+		color: @white;		
+	}
+	&heading-item{
+		display: block;
+		@media @media-size-xs {	
+			br{display: none;}		
+		}
+	}
+	&scroll{	
+		@media @media-device {
+			display: none;
+		}	
+		position: absolute;
+		left: 50%;
+		bottom: 45px;
+		transform: translateX(-50%);
+		width: 100px;
+		text-align: center;
+		display: block;
+		&, &:focus, &:hover{
+			color: @white;
+		}
+	}
+	&scroll-name{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 8;
+		margin-bottom: 5px;
+	}
+	&scroll-icon{
+		width: 52px;
+		height: 52px;
+		margin: 0 auto;
+		animation: scrollto 0.8s ease-in-out infinite alternate ;
+	}
+	@keyframes scrollto {
+		from {			
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(5px);
+		}
+	}
+}

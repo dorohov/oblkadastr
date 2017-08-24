@@ -1,0 +1,25 @@
+<div class="modal fade {{modals_prefix}}modal" id="{{modals_id}}" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog {{modals_prefix}}dialog">
+		<div class="modal-body {{modals_prefix}}body" >
+			<button type="button" class="btn-site  {{modals_prefix}}close  modal-close" data-dismiss="modal" aria-hidden="true">
+				[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="modal-close"]]
+			</button>
+			<div class="modal-content {{modals_prefix}}content">
+				[[azbntple 
+					tpl="/src/block/site/default/page-header/heading.html" 
+					header_prefix="page-header__" 
+					header_mod="is--modals"
+					header_level="h4" 
+					header="Запрос прайс-листа и условий сотрудничества"
+				]]	
+				[[azbntple 
+					tpl="/src/block/site/default/form/fio-email-tel-city.html"
+					form_id="fcm"
+					form_prefix="form__"
+					form_mod="is--block"
+					form_btn_name="Отправить"
+				]] 
+			</div> 
+		</div>
+	</div>
+</div>

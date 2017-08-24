@@ -1,0 +1,56 @@
+.advantages-panel__{
+	&block{
+		@media @media-device {
+			padding-top: @panel-gutter-device;
+			padding-bottom: @panel-gutter-device;
+		}
+		@media @media-screen {
+			padding-top: @panel-gutter-screen - 1vw;
+			padding-bottom: @panel-gutter-screen  + 3vw;
+		}
+	}
+	&row{
+		justify-content: center;
+	}
+	&cols{
+		@media @media-device-lg {
+			.makeCols(3, 12);
+		}
+		@media @media-size-xs-p{.makeCols(6, 12);}
+		@media @media-size-xxxs {.makeCols(12, 12);}
+		@media @media-size-xs-l{.makeCols(3, 12);}
+		@media @media-size-xxs-l {.makeCols(6, 12);}
+		@media @media-screen-lg {
+			.makeCols(1.7, 12);
+		}
+		@media @media-size-lg {
+			.makeCols(3, 12);
+		}
+			
+	}
+	&item{
+		text-align: center;
+	}
+	&preview{
+		margin: 0 auto 5px;
+		@media @media-device{
+			width: 120px;
+			height: 120px;
+		}
+		@media @media-screen{
+			width: 140px;
+			height: 140px;			
+		}
+	}
+	&note{
+		font-size: @b-fs - 2;
+		line-height: @b-lh - 6;
+		@media @media-device{
+			br {display: none}
+		}
+		/*@media @media-screen {			
+			.calcFontSize(16, 18, 320, 1680);
+			.calcLineHeight(22, 24, 320, 1680); 
+		}*/
+	}
+}
