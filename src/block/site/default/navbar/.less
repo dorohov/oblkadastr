@@ -133,8 +133,8 @@
 		@media @media-device-lg{
 			position: fixed;
 			top: @navbar-top-device;
-			left: -270px;
-			width: 270px;
+			left: -300px;
+			width: 300px;
 			height: ~"calc(100vh - @{navbar-top-device})";
 			opacity: 0;
 		    visibility: hidden;
@@ -150,6 +150,12 @@
 		    	left: 0;
 		    }
 		}
+		@media @media-size-xs-p{
+			left: -100%;
+			width: 100%;
+		    &.is--open{
+		    }			
+		}		
 		@media @media-size-md{		
 			padding: 15px 15px;
 			top: @navbar-top-md;
