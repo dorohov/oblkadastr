@@ -207,6 +207,8 @@
 }
 .action-panel__{
 	&block{
+		max-width: 1920px;
+		margin: 0 auto;
 	}
 }
 .breadcrumb__{
@@ -1638,7 +1640,7 @@ textarea.form__control{
 			@media @media-screen-lg {
 				width: 35%;
 				text-align: right;
-				max-width: 390px;
+				//max-width: 390px;
 			} 
 			/*@media @media-size-lg {width: 50%;} 
 			@media @media-size-xl {width: 45%;} 
@@ -2402,7 +2404,10 @@ textarea.form__control{
 			max-height: 675px;
 			color: fadeout(@b-color-a, 80%);
 			width: 100vw;
-			height: 35.16vw;
+			height: 35.16vw;			
+			@media @media-size-xxxl {
+				display: none;
+			}
 		}
 	}
 	&container{
@@ -3421,6 +3426,9 @@ blockquote {
 			color: fadeout(@b-color-a, 70%);
 			width: 45.85vw;
 			height: 6.25vw;
+			@media @media-size-xxxl {
+				display: none;
+			}
 		}
 		&.is--bottom{
 			bottom: 0;
