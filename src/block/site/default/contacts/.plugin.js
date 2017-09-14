@@ -72,10 +72,10 @@ function initMap() {
 				var btn = $(this);
 				var coord = btn.attr('data-coord');
 				var coord_arr = coord.split(',');
-				
+				console.dir(coord_arr);
 				mapOfficeOne.setCenter({
-					lat : (coord_arr[0] || '').trim(),
-					lng : (coord_arr[1] || '').trim(),
+					lat : parseFloat((coord_arr[0] || '').trim()),
+					lng : parseFloat((coord_arr[1] || '').trim()),
 				});
 				
 			});
