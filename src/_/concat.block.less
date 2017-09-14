@@ -1776,6 +1776,7 @@ textarea.form__control{
 			border: 2px solid @yellow;
 			padding: 10px 15px;
 			min-width: 90px;
+			min-width: 140px;
 			transform: scaleY(0);
     		transform-origin: 0 0;			
 			.navbar__nav-item.dropdown.open &{				
@@ -2097,9 +2098,14 @@ textarea.form__control{
 		&.is--heading{
 			font-family: @page_header_ff;
 			font-weight: 700;
-			//text-transform: uppercase;
 			.calcFontSize(30, 56, 320, 1680);
 			.calcLineHeight(36, 64, 320, 1680);
+		}
+		&.is--news{
+			font-family: @page_header_ff;
+			font-weight: 700;
+			.calcFontSize(20, 40, 320, 1680);
+			.calcLineHeight(26, 46, 320, 1680);
 		}		
 		&.is--icon{			
 			@media @media-notsmart{letter-spacing: 3.5px;}
