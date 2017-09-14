@@ -65,6 +65,21 @@ function initMap() {
 			//	google.maps.event.trigger(mapOfficeOne, "resize");
 			//	mapOfficeOne.setCenter(OfficeOne);
 			//});
+			
+			$(document.body).on('click.azbn7', '.azbn__office__map__set-center-btn', null, function(event){
+				event.preventDefault();
+				
+				var btn = $(this);
+				var coord = btn.attr('data-coord');
+				var coord_arr = coord.split(',');
+				
+				mapOfficeOne.setCenter({
+					lat : (coord_arr[0] || '').trim(),
+					lng : (coord_arr[1] || '').trim(),
+				});
+				
+			});
+			
 		
 	}
 	
