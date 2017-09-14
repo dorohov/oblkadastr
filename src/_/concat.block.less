@@ -2838,7 +2838,8 @@ textarea.form__control{
 	&dropdown{
 		background-color: fadeout(@blue-light, 70%);
 		position: relative;
-		height: 100%;
+		height: ~"calc(100% - 44px)";
+		@media @media-screen-lg {height: 100%;}
 	}
 	&dropdown-inner{
 		position: relative;
@@ -2869,6 +2870,9 @@ textarea.form__control{
 			position: absolute;
 			top: 15px;
 			left: 20px;
+		}
+		&.no--before{
+			&::before{display: none;}
 		}
 		&:hover{
 			background-color: @white;
