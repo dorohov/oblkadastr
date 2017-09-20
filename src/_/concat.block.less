@@ -447,19 +447,26 @@
 		z-index: 5;
 		background-color: @white;
 		font-size: @b-fs - 2px;
-		@media @media-screen {
+		/*@media @media-screen {
+			max-width: 650px;
+    		padding: 3.25vw 3.5vw 5vw 4.2vw;
+		}*/
+		@media @media-size-xxl {
 			max-width: 650px;
     		padding: 3.25vw 3.5vw 5vw 4.2vw;
 		}
 	} 
 	&container{
-		@media @media-screen {
+		/*@media @media-screen {
+			padding-top: 6.8vw;
+		}*/
+		&.is--nofooter{min-height: 0;}
+		@media @media-size-xxl {
 			padding-top: 6.8vw;
 		}
 	}
 	&row{
 		align-items: center;
-		
 		@media @media-notsmart {
 			//justify-content: center;
 		}
@@ -489,7 +496,15 @@
 		font-weight: 700;
 	}
 	&map{
-		@media @media-screen {
+		/*@media @media-screen {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}*/		
+		@media @media-size-xxl {
 			position: absolute;
 			z-index: 1;
 			top: 0;
@@ -501,8 +516,9 @@
 	&map-item{
 		height: 500px;
 		@media @media-size-xs-p {height: 350px;}
-		@media @media-size-xs-l {height: 300px;}
-		@media @media-screen {height: 100%; width: 100%;}
+		@media @media-size-xs-l {height: 300px;}		
+		//@media @media-screen {height: 100%; width: 100%;}
+		@media @media-size-xxl {height: 100%; width: 100%;}
 	}
 }
 .fancybox-preview{	
@@ -2889,6 +2905,11 @@ textarea.form__control{
 			left: 20px;
 		}
 		&.no--before{
+			font-weight: 700;
+			color: @green;
+			text-transform: uppercase;
+			font-size: @b-fs - 2;
+			letter-spacing: 1px;
 			&::before{display: none;}
 		}
 		&:hover{
@@ -3269,7 +3290,11 @@ textarea.form__control{
 				background-color: @white;
 				border: 0;
 				padding: 5px;
-				margin-left: 5px;
+				margin-left: 5px; 
+				option:hover{
+					background: @green;
+					color: @white;
+				}
 			}
 			.is--right{
 				text-align: right;
