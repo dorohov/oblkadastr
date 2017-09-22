@@ -15,35 +15,28 @@
 						social_prefix="social__"
 						social_mode="is--contacts  is--location"
 						social_icon="location"
-						social_name="Офисы в Орле:"
+						social_name="Наши офисы:"
 					]]
 				</div>
 				<div class="{{contacts_prefix}}item">
-					г. Орёл, ул. Гуртьева, д. 14
+					<a class="azbn__office__map__set-center-btn" href="#0" data-coord="52.9767305, 36.0620975">г.&nbsp;Орёл, ул.&nbsp;Гуртьева, д.&nbsp;14</a>
 				</div>
 				<div class="{{contacts_prefix}}item">
-					г. Орёл, ул. Космонавтов, д. 3 (По предварительной записи)
+					<a class="azbn__office__map__set-center-btn" href="#1" data-coord="53.276987, 36.575528">г.&nbsp;Мценск, ул.&nbsp;Ленина, д.&nbsp;34</a>
+				</div>
+				<div class="{{contacts_prefix}}item">
+					<a class="azbn__office__map__set-center-btn" href="#2" data-coord="52.423319, 37.608224">г.&nbsp;Ливны, ул.&nbsp;Ленина, д.&nbsp;20</a>
 				</div>
 			</div>
 			<div class="{{contacts_prefix}}cols cols  is--cols-5">	
-				<div class="{{contacts_prefix}}item">
-					[[azbntple 
-						tpl="/src/block/site/default/social/item-nolink.html" 
-						social_prefix="social__"
-						social_mode="is--contacts  is--location"
-						social_icon="location"
-						social_name="Офисы регионов:"
-					]]
-				</div>
-				<div class="{{contacts_prefix}}item">
-					г.&nbsp;Мценск, ул.&nbsp;Ленина, д.&nbsp;34
-				</div>
-				<div class="{{contacts_prefix}}item">
-					г.&nbsp;Ливны, ул.&nbsp;Ленина, д.&nbsp;20
+				<div class="contacts-panel__item">
+					<div class="social__item  is--location">
+						<div class="social__name">График работы</div>
+					</div>
+					<p>Пн-Пт C 8:30 до 17:30 <br>Перерыв с 12:30 до 13:30 Сб-Вс выходной.<br> «Выезд геодезиста в любой день недели»</p>
 				</div>
 			</div>
-			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
-				
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">				
 				<div>
 					[[azbntple 
 						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
@@ -75,7 +68,7 @@
 					]]
 				</div>
 			</div>
-			<div class="{{contacts_prefix}}cols cols  is--cols-5">	
+			<!--<div class="{{contacts_prefix}}cols cols  is--cols-5">	
 				[[azbntple 
 					tpl="/src/block/site/default/social/item-target.html" social_prefix="social__"
 					social_href="https://vk.com/"
@@ -84,19 +77,23 @@
 					social_icon="vk"
 					social_name="  "
 				]]
+			</div>-->
+			<div class="{{contacts_prefix}}cols cols  is--cols-12">	
+				<div class="{{contacts_prefix}}row row  is--wrap  is--gutter15">
+					<div class="{{contacts_prefix}}cols cols  is--cols-7  is--modal-text">	
+						<p><b>Вы можете также связаться с нами, отправив сообщение через форму</b></p>
+					</div>
+					<div class="{{contacts_prefix}}cols cols  is--cols-5 is--modal-btn">
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-modal.html"
+							button_prefix="btn__" 
+							button_mod="is--sm"
+							button_target="modal-review"
+							button_name="Связаться"
+						]]
+					</div>	
+				</div>
 			</div>
-			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
-				<p><b>Вы можете также связаться с нами, отправив сообщение через форму</b></p>
-			</div>
-			<div class="{{contacts_prefix}}cols cols  is--cols-5">
-				[[azbntple 
-					tpl="/src/block/site/default/button/button-modal.html"
-					button_prefix="btn__" 
-					button_mod="is--sm"
-					button_target="modal-review"
-					button_name="Связаться"
-				]]
-			</div>	
 		</div>
 	</div>
 </div>
