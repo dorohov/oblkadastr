@@ -1,0 +1,41 @@
+.index-page__{
+	&block{
+		position: relative;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		overflow: hidden;
+		@media @media-screen {
+			padding-top: 7vw;
+			padding-bottom: 2.35vw;
+		}
+	}
+	&bg{
+		position: absolute;
+		svg{fill: currentColor;}
+		&.is--top{
+			top: 0;
+			right: 0;
+			max-width: 850px;
+			max-height: 115px;
+			color: fadeout(@b-color-a, 70%);
+			width: 45.85vw;
+			height: 6.25vw;
+			@media @media-size-xxxl {
+				display: none;
+			}
+		}
+		&.is--bottom{
+			bottom: 0;
+			left: 0;
+			max-width: 975px;
+			max-height: 75px;
+			color: fadeout(@b-color-a, 70%);
+			width: 52.57vw;
+			height: 4.05vw;
+		}
+	}
+	&container{
+		position: relative;
+		z-index: 3;
+	}
+}

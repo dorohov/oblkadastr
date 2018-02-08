@@ -1,0 +1,23 @@
+<tr class="{{catalog_prefix}}item">
+	<td>
+		<a class="{{catalog_prefix}}name" href="{{catalog_link}}">{{catalog_heading}}, <span>{{catalog_weight}}</span></a>
+	</td>
+	<td>
+		[[azbntple 
+			tpl="/src/block/site/default/filter/qty.html"
+			filter_prefix="filter-qty__"
+		]]
+	</td>
+	<td>{{catalog_weight_all}}</td>
+	<td>
+		<span class="{{catalog_prefix}}cost" >{{catalog_cost}} [[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="ruble" ]]</span>
+	</td>
+	<td>
+		[[azbntple 
+			tpl="/src/block/site/default/button/button-icon.html"
+			button_prefix="btn__" 
+			button_mod="is--basket-add"
+			button_icon="basket-add"
+		]]
+	</td>
+</tr>

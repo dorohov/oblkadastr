@@ -1,0 +1,43 @@
+.links-page__{
+	&block{}
+	&row{
+		@media @media-screen {
+			margin-bottom: 4.5vw;
+		}
+	}
+	&cols{}
+}
+.links-item__{
+	&item{
+		position: relative;
+		padding-left: 60px;
+	}
+	&icon{
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: @green-dark;
+		width: 45px;
+		height: 45px;
+		transition: @trs-site;
+		svg{display: block;}
+		.links-item__item:hover &{
+			color: @blue-light;
+		}
+	}
+	&heading{
+		margin-bottom: 5px;
+		transition: @trs-site;
+	}
+	&heading-link{
+		&, &:focus{
+			color: @b-color;
+		}
+		.links-item__item:hover &{
+			color: @b-color-a;
+		}
+	}
+	&btn{
+		font-size: @b-fs - 2; 
+	}
+}

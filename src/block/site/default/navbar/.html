@@ -1,0 +1,113 @@
+<nav class="navbar {{class}}">
+	<div class="container {{navbar_prefix}}container">
+		<div class="row {{navbar_prefix}}row">
+			<div class="cols {{navbar_prefix}}cols  is--header"> 				
+				<div class="{{navbar_prefix}}header">
+					<div class="row {{navbar_prefix}}row-header ">
+						<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+							<div class="{{navbar_prefix}}hamburger">
+								<button class="{{navbar_prefix}}hamburger-btn hamburger__item" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+									<span class="hamburger__line  is--left"></span>
+									<span class="hamburger__line  is--center"></span>
+									<span class="hamburger__line  is--right"></span>
+									<span class="hamburger__line  is--left-top"></span>
+									<span class="hamburger__line  is--right-top"></span>
+								</button>
+							</div>
+						</div>
+						<div class="cols {{navbar_prefix}}cols-header  is--brand">
+							<a class="{{navbar_prefix}}brand" href="/">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+							</a>
+						</div>
+						<div class="cols {{navbar_prefix}}cols-header  is--tel">							
+							[[azbntple 
+								tpl="/src/block/site/default/button/link-icon-noname.html"
+								button_prefix="btn__" 
+								button_mod="is--tel"
+								button_link="tel:+79103033771"
+								button_icon="tel"
+							]]
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols {{navbar_prefix}}cols  is--collapse">
+				<div class="{{navbar_prefix}}collapse" >
+					<div class="{{navbar_prefix}}collapse-inner">
+						<div class="row {{navbar_prefix}}collapse-row">
+							<div class="cols {{navbar_prefix}}collapse-cols  is--nav">
+								<ul class="{{navbar_prefix}}nav">
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Услуги"
+										navbar_link="/services.html"
+										navbar_mod=" " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="О компании"
+										navbar_link="/about.html"
+										navbar_mod=" " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Новости"
+										navbar_link="/news.html"
+										navbar_mod="  " 
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Полезные ссылки"
+										navbar_link="/links.html"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Контакты"
+										navbar_link="/contacts.html" 
+										navbar_mod="  "
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item-dropdown.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="  "
+										navbar_link="  " 
+										navbar_mod="  "
+									]]	   
+								</ul>
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols  is--search">
+								<a href="/search.html" class="{{navbar_prefix}}btn-search">
+									[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="search" ]]
+								</a>
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols  is--right" >
+								<div class="row {{navbar_prefix}}right-row">
+									<div class="cols {{navbar_prefix}}right-cols  is--contacts">
+										<div class="{{navbar_prefix}}tel-block">
+											<a href="tel:{{contacts.phone_tel}}" class="{{navbar_prefix}}tel">{{contacts.phone}}</a>
+										</div>
+									</div>
+									<div class="cols {{navbar_prefix}}right-cols  is--btn">
+										[[azbntple 
+											tpl="/src/block/site/default/button/link.html"
+											button_prefix="btn__" 
+											button_mod="is--xs  is--enter"
+											button_link="##"
+											button_name="Войти"
+										]]
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

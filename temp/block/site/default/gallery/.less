@@ -1,0 +1,26 @@
+.gallery-panel__{	
+	&block{		
+		&.is--catalog{padding-top: 20px;}
+		&.is--text{padding-top: 40px;}
+	}
+	&cols{
+		&.is--cols-6{
+			@media @media-size-xs-l {
+				.makeCols(4, 12);
+			}
+			@media @media-size-xs-p {
+				.makeCols(12, 12);
+			}
+			@media @media-size-sm {
+				.makeCols(4, 12);
+			}
+		}		
+		@media @media-screen {
+			&.is--hidden-screen{display: none}
+		}
+	}
+	&item{
+		display: block; 
+		//box-shadow: 8px 13.856px 21px 0px rgba(0, 0, 0, 0.13);
+	} 
+}

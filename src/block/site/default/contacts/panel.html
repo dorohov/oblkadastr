@@ -1,0 +1,102 @@
+<div class="container {{contacts_prefix}}container content-block__container  is--nofooter">	
+	<div class="{{contacts_prefix}}block">
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--contacts"
+			header_level="h1"
+			header="Контакты"
+		]]	
+		<div class="{{contacts_prefix}}row row  is--wrap  is--gutter">
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">	
+				<div class="{{contacts_prefix}}item">
+					[[azbntple 
+						tpl="/src/block/site/default/social/item-nolink.html" 
+						social_prefix="social__"
+						social_mode="is--contacts  is--location"
+						social_icon="location"
+						social_name="Наши офисы:"
+					]]
+				</div>
+				<div class="{{contacts_prefix}}item">
+					<a class="azbn__office__map__set-center-btn" href="#0" data-coord="52.9767305, 36.0620975">г.&nbsp;Орёл, ул.&nbsp;Гуртьева, д.&nbsp;14</a>
+				</div>
+				<div class="{{contacts_prefix}}item">
+					<a class="azbn__office__map__set-center-btn" href="#1" data-coord="53.276987, 36.575528">г.&nbsp;Мценск, ул.&nbsp;Ленина, д.&nbsp;34</a>
+				</div>
+				<div class="{{contacts_prefix}}item">
+					<a class="azbn__office__map__set-center-btn" href="#2" data-coord="52.423319, 37.608224">г.&nbsp;Ливны, ул.&nbsp;Ленина, д.&nbsp;20</a>
+				</div>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-5">	
+				<div class="contacts-panel__item">
+					<div class="social__item  is--location">
+						<div class="social__name">График работы</div>
+					</div>
+					<p>Пн-Пт C 8:30 до 17:30 <br>Перерыв с 12:30 до 13:30 Сб-Вс выходной.<br> «Выезд геодезиста в любой день недели»</p>
+				</div>
+			</div>
+			<div class="{{contacts_prefix}}cols cols  is--cols-7">				
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+						social_href="tel:+74862492929"
+						social_target="  "
+						social_mode="is--contacts"
+						social_icon="tel"
+						social_name="+7 (4862) <span>49-29-29</span>"
+					]]
+				</div>
+				
+				<div class="{{contacts_prefix}}item">
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal-icon.html"
+						button_prefix="btn-link__" 
+						button_mod="is--footer"
+						button_target="modal-call"
+						button_name="Заказать звонок"
+					]]
+				</div>
+				<div>
+					[[azbntple 
+						tpl="/src/block/site/default/social/item.html" social_prefix="social__"
+						social_href="mailto:info@oblkadastr.ru"
+						social_target="  "
+						social_mode="is--contacts  is--email"
+						social_icon="email"
+						social_name="<span>info</span>@oblkadastr.ru"
+					]]
+				</div>
+			</div>
+			<!--<div class="{{contacts_prefix}}cols cols  is--cols-5">	
+				[[azbntple 
+					tpl="/src/block/site/default/social/item-target.html" social_prefix="social__"
+					social_href="https://vk.com/"
+					social_target="_blank"
+					social_mode="is--vk"
+					social_icon="vk"
+					social_name="  "
+				]]
+			</div>-->
+			<div class="{{contacts_prefix}}cols cols  is--cols-12">	
+				<div class="{{contacts_prefix}}row row  is--wrap  is--gutter15">
+					<div class="{{contacts_prefix}}cols cols  is--cols-7  is--modal-text">	
+						<p><b>Вы можете также связаться с нами, отправив сообщение через форму</b></p>
+					</div>
+					<div class="{{contacts_prefix}}cols cols  is--cols-5 is--modal-btn">
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-modal.html"
+							button_prefix="btn__" 
+							button_mod="is--sm"
+							button_target="modal-review"
+							button_name="Связаться"
+						]]
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="{{contacts_prefix}}map">
+	<div class="{{contacts_prefix}}map-item" id="map-google" data-map='{"center" : [52.9767305, 36.0620975],"zoom" : 18,"placemarks" : [{"coord" : [52.976698, 36.063286]}]}' ></div>
+</div>
