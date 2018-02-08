@@ -108,20 +108,63 @@
 		</div>
 	</div>
 </nav> 	  
-		<div class="content-block error-page__block bg-block  is--cover" role="main" style="background-image: url(/img/temp/bg-404.jpg);">	
+		<div class="content-block search-page__block  bg-block  is--contain  is--right-bottom" role="main" style="background-image: url(/img/temp/bg-link.png);">	
 	<div class="container content-block__container">
-		<div class="page-header__block  is--heading  is--404  is--white">
-	<h1  class="page-header__heading  is--heading  is--404  is--white"><span>Страница не найдена</span></h1>		
-</div>	
-		<div class="error-page__btn">
-			<a href="/#" class="btn-link__item is--404  is--white">Ha главную
-	<span class="btn-link__icon"><svg class="icon-svg icon-link-arrow" role="img">
-	<use xlink:href="/img/svg/sprite.svg#link-arrow"></use>
-</svg></span>
-</a>		
+		<div class="breadcrumb__block    ">
+	<ul class="breadcrumb__list    ">
+		<li class="breadcrumb__list-item"><a href="/" class="breadcrumb__list-link">Главная</a></li>
+		<li class="breadcrumb__list-item is--active">Поиск</li>
+	</ul>
+</div>		
+		<div class="page-header__block  is--heading">
+	<h1  class="page-header__heading  is--heading"><span>Поиск</span></h1>		
+</div>
+		<div class="search-panel__block">
+	<form class="search-panel__form" action="#">
+		<div class="search-panel__form-row row">
+			<div class="search-panel__form-cols cols  is--input">
+				<div class="form__item">
+					<input type="text" name="search" class="form__control" placeholder="Поиск по услугам">
+					<div class="form__control-icon"><svg class="icon-svg icon-search" role="img">
+	<use xlink:href="/img/svg/sprite.svg#search"></use>
+</svg></div>
+				</div>
+			</div>
+			<div class="search-panel__form-cols cols  is--btn">
+				<button type="button" class="btn__item is--search">Найти</button>
+			</div>
+		</div>
+	</form>
+	<div class="search-panel__result">
+		<h3 class="search-panel__result-heading">Результаты поиска:</h3>
+		<div class="search-panel__text-block text__block">
+			<ol class="search-panel__list">
+				<li class="search-panel__item">
+					<h4 class="search-panel__link">
+						<a href="/services-item.html">Заполнение носогубных складок и морщин улыбки</a>
+					</h4>
+					<div class="search-panel__text">
+						Самый популярный способ — заполнить складки филлерами. Для этих целей используют три вида наполнителей, которые различаются между собой составом и временем действия...
+					</div>
+				</li>
+				<li class="search-panel__item">
+					<h4 class="search-panel__link"><a href="/services-item.html">Лифтинговые нити</a></h4>
+					<div class="search-panel__text">Самый популярный способ — заполнить складки филлерами. Для этих целей используют три вида наполнителей, которые различаются между собой составом и временем действия</div>
+				</li>
+				<li class="search-panel__item">
+					<h4 class="search-panel__link"><a href="/services-item.html">Плазмолифтинг</a></h4>
+					<div class="search-panel__text">Для этих целей используют три вида наполнителей, которые различаются между собой составом и временем действия</div>
+				</li>
+				<li class="search-panel__item">
+					<h4 class="search-panel__link"><a href="/services-item.html">RF-лифтинг</a></h4>
+					<div class="search-panel__text">Самый популярный способ — заполнить складки филлерами</div>
+				</li>
+			</ol>
 		</div>
 	</div>
-</div>	
+</div>
+	</div>
+</div>
 		<footer class="footer__block">	
 	<div class="container footer__container">
 		<div class="row footer__row">
