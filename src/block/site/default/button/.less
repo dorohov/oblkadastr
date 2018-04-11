@@ -65,8 +65,25 @@
 				letter-spacing: 2px;
 			}
 		}
-		&.is--form{
-
+		&.is--navbar{
+			font-size: @b-fs - 4;
+			padding: 6px 15px;
+			letter-spacing: 0.5px;		
+			@media @media-screen {
+				padding: 6px 25px;
+				letter-spacing: 1.5px;
+			}	
+			@media @media-size-lg{
+				border-width: 2px;
+				font-size: @b-fs - 8;
+				padding: 6px 10px;
+				letter-spacing: .25px;				
+			}	
+			@media @media-size-xl1{
+				font-size: @b-fs - 6;
+				padding: 6px 10px;
+				letter-spacing: .25px;				
+			}		
 		}
 	}
 	&icon{
